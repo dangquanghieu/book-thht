@@ -1,0 +1,29 @@
+name: download-stats
+on:
+  schedule:
+    - cron: "0 1 * * *"   # 01:00 UTC = 08:00 giờ Việt Nam
+  workflow_dispatch:       # cho phép chạy tay từ tab Actions
+permissions:
+  contents: write
+jobs:
+  snap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Snapshot download counts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p stats
+          [ -f stats/downloads.csv ] || echo "date,tag,asset,downloads" > stats/downloads.csv
+          gh api repos/${{ github.repository }}/releases --paginate \
+            --jq '.[] | .tag_name as $t | .assets[] | [(now|strftime("%Y-%m-%d")), $t, .name, .download_count] | @csv' \
+            >> stats/downloads.csv
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add stats/downloads.csv
+          git commit -m "stats: $(date -u +%F)" || exit 0
+          git push
+          
