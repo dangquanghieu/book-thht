@@ -25,7 +25,7 @@ https://github.com/dangquanghieu/book-thht
 
 Nguồn LaTeX của sách không được công khai và không thuộc phạm vi giấy phép này.
 
-Dưới đây là một số tóm tắt về bản quyền.
+### Dưới đây là một số tóm tắt về bản quyền.
 
 Bạn được phép:
 
