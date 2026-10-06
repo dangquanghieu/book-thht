@@ -11,6 +11,7 @@ Bạn đọc tải về [ở đây](https://github.com/dangquanghieu/book-thht/r
 
 [![Downloads](https://img.shields.io/github/downloads/dangquanghieu/book-thht/total)](https://github.com/dangquanghieu/book-thht/releases)
 
+Mọi phản hồi về tài liệu này, xin gửi tới: hieu chấm dangquang tại hust chấm edu chấm vn
 
 ## License
 
