@@ -8,7 +8,7 @@ Bài giảng *Tín hiệu và hệ thống*, tác giả Đặng Quang Hiếu, Đ
 
 [![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-© 2026 <Họ tên>. Cuốn sách *Tín hiệu và hệ thống* (file PDF trong mục Releases) được phát hành
+© 2026 Đặng Quang Hiếu. Cuốn sách *Tín hiệu và hệ thống* (file PDF trong mục Releases) được phát hành
 theo giấy phép [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Khi trích dẫn hoặc chia sẻ, vui lòng ghi: Đặng Quang Hiếu, *Tín hiệu và hệ thống*, 2026,
