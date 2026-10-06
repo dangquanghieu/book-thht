@@ -23,3 +23,21 @@ Khi trích dẫn hoặc chia sẻ, vui lòng ghi: Đặng Quang Hiếu, *Tín hi
 https://github.com/dangquanghieu/book-thht
 
 Nguồn LaTeX của sách không được công khai và không thuộc phạm vi giấy phép này.
+
+Dưới đây là một số tóm tắt về bản quyền.
+
+Bạn được phép:
+
+**Chia sẻ**: sao chép và phân phối lại cuốn sách dưới bất kỳ phương tiện hay định dạng nào.
+
+**Phỏng tác**: chỉnh sửa, biến đổi hoặc phát triển tiếp nội dung của sách.
+
+Với các điều kiện sau:
+
+**Ghi công (BY)**: ghi rõ tên tác giả, dẫn liên kết tới giấy phép và nêu rõ nếu có chỉnh sửa. Không được trình bày theo cách ngụ ý tác giả xác nhận hay ủng hộ bạn hoặc cách bạn sử dụng tài liệu.
+
+**Phi thương mại (NC)**: không sử dụng tài liệu chủ yếu nhằm mục đích thương mại hoặc thu lợi tài chính.
+
+**Chia sẻ tương tự (SA)**: nếu phỏng tác hoặc phát triển từ sách, bạn phải phát hành sản phẩm của mình theo cùng giấy phép này (hoặc giấy phép được Creative Commons công nhận là tương thích).
+
+**Không áp thêm hạn chế**: không được dùng điều khoản pháp lý hay biện pháp kỹ thuật (như DRM) để ngăn người khác thực hiện những quyền mà giấy phép cho phép.
