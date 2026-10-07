@@ -13,7 +13,7 @@ Bạn đọc tải về [ở đây](https://github.com/dangquanghieu/book-thht/r
 
 Mọi phản hồi về tài liệu này, xin gửi tới: hieu chấm dangquang tại hust chấm edu chấm vn
 
-## Các bài lab đồng hành (Python)
+## Các bài lab đồng hành
 
 Tác giả có soạn thêm một số bài lab đồng hành cùng tài liệu này, nhằm hỗ trợ và khuyến khích sinh viên sử dụng Python
 để minh họa, tìm hiểu và phát triển thêm những kiến thức đã học trong Tín hiệu và hệ thống.
