@@ -15,8 +15,7 @@ Mọi phản hồi về tài liệu này, xin gửi tới: hieu chấm dangquang
 
 ## Các bài lab đồng hành
 
-Tác giả có soạn thêm một số bài lab đồng hành cùng tài liệu này, nhằm hỗ trợ và khuyến khích sinh viên sử dụng Python
-để minh họa, tìm hiểu và phát triển thêm những kiến thức đã học trong Tín hiệu và hệ thống.
+Tác giả có soạn thêm một số bài lab đồng hành cùng tài liệu này, nhằm minh họa những kiến thức đã học trong Tín hiệu và hệ thống.
 
 Bạn đọc chạy thử ở [link này](https://github.com/dangquanghieu/tinhieu-hethong-notebooks). Xin lưu ý là những bài lab này vẫn chưa đầy đủ và trong giai đoạn thử nghiệm. 
 
