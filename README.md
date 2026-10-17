@@ -9,7 +9,7 @@ Bài giảng *Tín hiệu và hệ thống*, tác giả Đặng Quang Hiếu, Đ
 
 Bạn đọc tải về [ở đây](https://github.com/dangquanghieu/book-thht/releases/latest/download/TinHieuHeThong.pdf)
 
-[![Downloads](https://img.shields.io/github/downloads/dangquanghieu/book-thht/total)](https://github.com/dangquanghieu/book-thht/releases)
+[![Downloads](https://img.shields.io/github/downloads/dangquanghieu/book-thht/total.svg)](https://github.com/dangquanghieu/book-thht/releases)
 
 Mọi phản hồi về tài liệu này, xin gửi tới: hieu chấm dangquang tại hust chấm edu chấm vn
 
