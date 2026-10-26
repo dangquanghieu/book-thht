@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CẬP NHẬT KHI PHÁT HÀNH: phiên bản, số trang (tìm "2026-10-24" và "291") -->
+<title>Tín hiệu và hệ thống – Giáo trình miễn phí (PDF) | Đặng Quang Hiếu, ĐHBK Hà Nội</title>
+<meta name="description" content="Giáo trình Tín hiệu và hệ thống cho sinh viên đại học ngành Điện, Điện tử, Viễn thông, Tự động hóa: hệ thống LTI, phép chập, chuỗi và biến đổi Fourier, định lý lấy mẫu, biến đổi z, biến đổi Laplace, hệ thống thông tin. Tải PDF miễn phí, giấy phép CC BY-NC-SA 4.0.">
+<meta name="author" content="Đặng Quang Hiếu">
+<meta name="keywords" content="tín hiệu và hệ thống, giáo trình tín hiệu và hệ thống, signals and systems, hệ thống LTI, phép chập, biến đổi Fourier, chuỗi Fourier, định lý lấy mẫu, biến đổi z, biến đổi Laplace, biểu đồ Bode, Bách Khoa Hà Nội">
+<link rel="canonical" href="https://dangquanghieu.com/book-thht/">
+
+<meta property="og:type" content="book">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Tín hiệu và hệ thống – Giáo trình miễn phí (PDF)">
+<meta property="og:description" content="Giáo trình Tín hiệu và hệ thống của Đặng Quang Hiếu (ĐHBK Hà Nội): LTI, Fourier, lấy mẫu, biến đổi z, Laplace. Tải PDF miễn phí.">
+<meta property="og:url" content="https://dangquanghieu.com/book-thht/">
+<meta property="og:image" content="https://dangquanghieu.com/book-thht/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Google Scholar -->
+<meta name="citation_title" content="Tín hiệu và hệ thống">
+<meta name="citation_author" content="Đặng, Quang Hiếu">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_language" content="vi">
+<meta name="citation_pdf_url" content="https://github.com/dangquanghieu/book-thht/releases/latest/download/TinHieuHeThong.pdf">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Tín hiệu và hệ thống",
+  "alternateName": "Signals and Systems (Vietnamese textbook)",
+  "url": "https://dangquanghieu.com/book-thht/",
+  "image": "https://dangquanghieu.com/book-thht/cover.png",
+  "author": {
+    "@type": "Person",
+    "name": "Đặng Quang Hiếu",
+    "url": "https://dangquanghieu.com/",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Đại học Bách Khoa Hà Nội"}
+  },
+  "inLanguage": "vi",
+  "bookFormat": "https://schema.org/EBook",
+  "numberOfPages": 291,
+  "version": "2026-10-24",
+  "dateModified": "2026-10-24",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "educationalLevel": "Đại học",
+  "about": ["Tín hiệu và hệ thống", "Hệ thống LTI", "Biến đổi Fourier", "Định lý lấy mẫu", "Biến đổi z", "Biến đổi Laplace"],
+  "description": "Giáo trình Tín hiệu và hệ thống cho sinh viên đại học năm 2–3 các ngành Điện, Điện tử, Viễn thông, Tự động hóa, Công nghệ thông tin, Cơ khí."
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1D5C63">
+
+<style>
+:root {
+  --bg: #ffffff;
+  --fg: #333333;
+  --head: #222222;
+  --muted: #666666;
+  --line: #e3e6e8;
+  --accent: #1D5C63;
+  --accent-fg: #ffffff;
+  --accent-hover: #13434A;
+  --card: #f6f8fa;
+  --pre-line: #d0d7de;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #1a1a1a;
+    --fg: #e0e0e0;
+    --head: #ffffff;
+    --muted: #a0a0a0;
+    --line: #333333;
+    --accent: #5fb3bc;
+    --accent-fg: #0d1214;
+    --accent-hover: #7CC4CC;
+    --card: #222222;
+    --pre-line: #30363d;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+a { color: var(--accent); }
+a:hover, a:focus { color: var(--accent-hover); }
+h1, h2, h3 { color: var(--head); font-weight: 600; line-height: 1.3; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+header.hero { padding: 56px 0 40px; border-bottom: 1px solid var(--line); }
+.hero-grid { display: grid; grid-template-columns: 240px 1fr; gap: 48px; align-items: center; }
+.cover {
+  width: 100%; height: auto; display: block;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+h1 { font-size: 2.6rem; line-height: 1.15; margin: 0 0 8px; letter-spacing: -.01em; }
+.byline { margin: 0 0 20px; color: var(--muted); }
+.byline a { color: inherit; }
+.lead { margin: 0 0 24px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 16px; }
+.btn {
+  display: inline-block; padding: 11px 22px; border-radius: 6px;
+  text-decoration: none; font-weight: 600; font-size: 1rem;
+  border: 1.5px solid var(--accent);
+}
+.btn-primary, .btn-primary:hover { background: var(--accent); color: var(--accent-fg); }
+.btn-secondary { color: var(--accent); }
+.meta { font-size: .9rem; color: var(--muted); margin: 0; }
+
+section { padding: 40px 0; border-bottom: 1px solid var(--line); }
+h2 { font-size: 1.6rem; margin: 0 0 16px; }
+h3 { font-size: 1.1rem; margin: 0 0 6px; }
+
+.toc { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.chap { background: var(--card); border-radius: 8px; padding: 16px 20px; }
+.chap h3 .num { color: var(--accent); margin-right: 6px; }
+.chap ul { margin: 0; padding-left: 1.1em; font-size: .95rem; color: var(--muted); }
+.chap li { margin: 2px 0; }
+.toc-note { font-size: .95rem; color: var(--muted); margin-top: 16px; }
+
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.cols > div, .hero-grid > div { min-width: 0; }
+p { overflow-wrap: anywhere; }
+pre {
+  background: var(--card); border: 1px solid var(--pre-line); border-radius: 6px; padding: 14px 16px;
+  font-size: .85rem; line-height: 1.45; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+footer { padding: 28px 0 48px; font-size: .9rem; color: var(--muted); }
+footer img { vertical-align: middle; margin-right: 8px; }
+
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  header.hero { padding: 32px 0 28px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 24px; }
+  .cover { max-width: 200px; margin: 0 auto; }
+  h1 { font-size: 2rem; text-align: center; }
+  .byline { text-align: center; }
+  .actions { justify-content: center; }
+  .toc, .cols { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <img class="cover" src="cover.png" width="600" height="850"
+         alt="Bìa sách Tín hiệu và hệ thống, Đặng Quang Hiếu, Đại học Bách Khoa Hà Nội">
+    <div>
+      <h1>Tín hiệu và hệ thống</h1>
+      <p class="byline"><a href="https://dangquanghieu.com/">Đặng Quang Hiếu</a> · Đại học Bách Khoa Hà Nội</p>
+      <p class="lead">Giáo trình dành cho sinh viên đại học năm 2–3 các ngành Điện, Điện tử, Viễn thông, Tự động hóa, Công nghệ thông tin, Cơ khí. Sách trình bày các khái niệm cơ bản về tín hiệu và hệ thống, hệ thống LTI, chuỗi và biến đổi Fourier, định lý lấy mẫu, biến đổi <i>z</i>, biến đổi Laplace và nhập môn hệ thống thông tin, kèm ví dụ, bài tập có đáp số và mã Python minh họa.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://github.com/dangquanghieu/book-thht/releases/latest/download/TinHieuHeThong.pdf">Tải PDF miễn phí</a>
+        <a class="btn btn-secondary" href="https://github.com/dangquanghieu/tinhieu-hethong-notebooks">Bài lab Python</a>
+      </div>
+      <p class="meta">Phiên bản 2026-10-24 · 291 trang A4 · <a href="https://github.com/dangquanghieu/book-thht/releases">Các phiên bản đã phát hành</a></p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="gioi-thieu">
+  <h2>Giới thiệu</h2>
+  <p>Cách biểu diễn tín hiệu và hệ thống trên miền thời gian và miền tần số, cùng các phương pháp phân tích hệ thống qua biến đổi Fourier, biến đổi <i>z</i> và biến đổi Laplace, là công cụ nền tảng của người làm kỹ thuật. Môn học này là cầu nối giữa các môn toán cao cấp và các môn chuyên ngành như xử lý tín hiệu số, điều khiển tự động và thông tin số.</p>
+  <p>Sách tập trung vào các khái niệm được chọn lọc, minh họa bằng ví dụ gắn với ứng dụng. Định lý và tính chất được phát biểu kèm điều kiện áp dụng; chứng minh được đưa vào khi ngắn gọn và giúp hiểu bản chất. Nội dung bám khung chương trình của Đại học Bách Khoa Hà Nội nhưng được trình bày rộng hơn một học kỳ, để giảng viên ở các trường khác có thể chọn phần phù hợp với chuyên ngành.</p>
+  <p><b>Kiến thức cần có:</b> Đại số tuyến tính, Giải tích, một chút Mạch điện và Xác suất thống kê.</p>
+</section>
+
+<section id="muc-luc">
+  <h2>Mục lục</h2>
+  <div class="toc">
+    <div class="chap">
+      <h3><span class="num">1</span>Những khái niệm cơ bản về tín hiệu và hệ thống</h3>
+      <ul>
+        <li>Định nghĩa và phân loại tín hiệu</li>
+        <li>Năng lượng và công suất của tín hiệu</li>
+        <li>Các phép toán trên tín hiệu; một số tín hiệu cơ bản</li>
+        <li>Phân loại, ghép nối và thuộc tính của hệ thống</li>
+      </ul>
+    </div>
+    <div class="chap">
+      <h3><span class="num">2</span>Hệ thống LTI</h3>
+      <ul>
+        <li>Đáp ứng xung và phép chập (rời rạc, liên tục)</li>
+        <li>Tính chất của phép chập và hệ thống LTI</li>
+        <li>Đáp ứng nhảy; phương trình sai phân / vi phân</li>
+        <li>Sơ đồ thực hiện hệ thống; phép tương quan</li>
+      </ul>
+    </div>
+    <div class="chap">
+      <h3><span class="num">3</span>Các phép biến đổi Fourier</h3>
+      <ul>
+        <li>Chuỗi Fourier cho tín hiệu liên tục và rời rạc</li>
+        <li>Biến đổi Fourier cho tín hiệu liên tục</li>
+        <li>Đáp ứng tần số và khái niệm bộ lọc</li>
+        <li>Biến đổi Fourier cho tín hiệu rời rạc (DTFT)</li>
+      </ul>
+    </div>
+    <div class="chap">
+      <h3><span class="num">4</span>Định lý lấy mẫu</h3>
+      <ul>
+        <li>Phát biểu và chứng minh định lý lấy mẫu</li>
+        <li>Lấy mẫu bằng dãy xung đơn vị</li>
+        <li>Phổ của tín hiệu rời rạc <i>x</i>[<i>n</i>]</li>
+      </ul>
+    </div>
+    <div class="chap">
+      <h3><span class="num">5</span>Biến đổi <i>z</i></h3>
+      <ul>
+        <li>Định nghĩa và miền hội tụ (ROC)</li>
+        <li>Tính chất; biến đổi <i>z</i> ngược</li>
+        <li>Phân tích hệ thống trên miền <i>z</i></li>
+        <li>Biến đổi <i>z</i> một phía</li>
+      </ul>
+    </div>
+    <div class="chap">
+      <h3><span class="num">6</span>Biến đổi Laplace</h3>
+      <ul>
+        <li>Định nghĩa, miền hội tụ, tính chất, biến đổi ngược</li>
+        <li>Phân tích hệ thống trên miền <i>s</i></li>
+        <li>Biểu đồ Bode; bộ lọc tương tự</li>
+        <li>Biến đổi Laplace một phía</li>
+      </ul>
+    </div>
+    <div class="chap">
+      <h3><span class="num">7</span>Hệ thống thông tin</h3>
+      <ul>
+        <li>Khái niệm hệ thống thông tin</li>
+        <li>Điều chế / giải điều chế</li>
+        <li>Nguyên lý thông tin số</li>
+      </ul>
+    </div>
+    <div class="chap">
+      <h3><span class="num">+</span>Phụ lục</h3>
+      <ul>
+        <li>Bảng đối chiếu các phép biến đổi</li>
+        <li>Thuật ngữ Việt–Anh</li>
+        <li>Bảng ký hiệu và chữ viết tắt</li>
+      </ul>
+    </div>
+  </div>
+  <p class="toc-note">Mỗi chương kết thúc bằng phần tóm tắt và bài tập có đáp số.</p>
+</section>
+
+<section id="trich-dan">
+  <div class="cols">
+    <div>
+      <h2>Trích dẫn</h2>
+      <p>Đặng Quang Hiếu, <i>Tín hiệu và hệ thống</i>, 2026. https://dangquanghieu.com/book-thht/</p>
+<pre>@misc{dang2026thht,
+  author       = {Đặng Quang Hiếu},
+  title        = {Tín hiệu và hệ thống},
+  year         = {2026},
+  note         = {Phiên bản 2026-10-24},
+  howpublished = {\url{https://dangquanghieu.com/book-thht/}}
+}</pre>
+    </div>
+    <div>
+      <h2>Góp ý, báo lỗi</h2>
+      <p>Sách được cập nhật thường xuyên; phiên bản mới nhất luôn có ở trang này. Mọi góp ý xin gửi về <b>hieu.dangquang [at] hust.edu.vn</b>.</p>
+      <h2>Giấy phép</h2>
+      <p>Bản PDF được phát hành theo giấy phép <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi">CC BY-NC-SA 4.0</a>: được chia sẻ và phỏng tác, với điều kiện ghi công tác giả, không dùng cho mục đích thương mại và phát hành bản phỏng tác theo cùng giấy phép.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi"><img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" width="88" height="31" alt="Giấy phép CC BY-NC-SA 4.0"></a>
+    © 2026 Đặng Quang Hiếu · <a href="https://dangquanghieu.com/">dangquanghieu.com</a> · <a href="https://github.com/dangquanghieu/book-thht">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
